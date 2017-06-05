@@ -106,7 +106,7 @@ namespace ToggleServer
             ni.ContextMenuStrip = new ContextMenus().Create();
 
             //Start the server
-            server = new Server(2345, new ClientEvent(ClientConnect));
+            server = new Server(server_port, new ClientEvent(ClientConnect));
 
             //Start the timer that updates clients
             updateClientsTimer = new System.Timers.Timer(1000);
@@ -114,7 +114,7 @@ namespace ToggleServer
             updateClientsTimer.Start();
 
             //Prepare the timer that resets after x minutes
-            countDownTimer = new System.Timers.Timer(1000*60*7);
+            countDownTimer = new System.Timers.Timer(reset);
             countDownTimer.Elapsed += new ElapsedEventHandler(ChangeStatus);            
         }
 
