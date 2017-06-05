@@ -96,18 +96,18 @@ namespace ToggleServer
         /// </summary>
         public void Display()
         {
+            //Start the server
+            server = new Server(server_port, new ClientEvent(ClientConnect));
+
             // Put the icon in the system tray and allow it react to mouse clicks.			
             ni.MouseClick += new MouseEventHandler(ni_MouseClick);
             ni.Icon = Resources.GoSml;
-            ni.Text = "Server: Available.";
+            ni.Text = "Server: Available on " + Dns.GetHostName() + ":" + server_port;
             ni.Visible = true;
 
             // Attach a context menu.
             ni.ContextMenuStrip = new ContextMenus().Create();
-
-            //Start the server
-            server = new Server(server_port, new ClientEvent(ClientConnect));
-
+            
             //Start the timer that updates clients
             updateClientsTimer = new System.Timers.Timer(1000);
             updateClientsTimer.Elapsed += UpdateClients;
