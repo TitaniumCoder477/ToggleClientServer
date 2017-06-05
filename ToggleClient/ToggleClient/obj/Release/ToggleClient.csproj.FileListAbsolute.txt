@@ -6,3 +6,4 @@ C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\
 C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.csproj.GenerateResource.Cache
 C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.exe
 C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.pdb
+C:\dev\Projects\GitHub\ToggleClientServer\ToggleClient\ToggleClient\obj\Release\ToggleClient.csprojResolveAssemblyReference.cache

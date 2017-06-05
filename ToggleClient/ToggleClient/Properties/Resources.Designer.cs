@@ -71,6 +71,18 @@ namespace ToggleClient.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;server&gt;
+        ///	&lt;name&gt;sheba.wilmoths&lt;/name&gt;
+        ///	&lt;port&gt;7404&lt;/port&gt;
+        ///&lt;/server&gt;.
+        /// </summary>
+        internal static string config {
+            get {
+                return ResourceManager.GetString("config", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon DisconnectedSml {

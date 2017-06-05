@@ -86,6 +86,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="config.xml" />
     <Content Include="GoSml.ico" />
     <Content Include="Images\About.png" />
     <Content Include="Images\DisconnectedSml.ico" />

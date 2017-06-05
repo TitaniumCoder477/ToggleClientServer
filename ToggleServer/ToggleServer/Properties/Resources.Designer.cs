@@ -71,6 +71,18 @@ namespace ToggleServer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;server&gt;
+        ///	&lt;port&gt;7404&lt;/port&gt;
+        ///	&lt;reset&gt;420000&lt;/reset&gt;
+        ///&lt;/server&gt;.
+        /// </summary>
+        internal static string config {
+            get {
+                return ResourceManager.GetString("config", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon DisconnectedSml {
