@@ -150,8 +150,8 @@ namespace ToggleClient
             catch
             {
                 ni.Icon = Resources.DisconnectedSml;
-                ni.Text = "Offline. Connecting...";
-                Console.WriteLine("Error! Cannot reach server " + server_name + ".");                
+                ni.Text = "Offline. Attempting connection to " + server_name + ":" + server_port + "...";
+                Console.WriteLine("Error! Cannot reach server " + server_name + ":" + server_port + ".");                
             }
         }
 
