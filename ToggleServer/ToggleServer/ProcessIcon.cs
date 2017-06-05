@@ -179,7 +179,7 @@ namespace ToggleServer
             {
                 status = "true";
                 ni.Icon = Resources.GoSml;
-                ni.Text = "Server: Available.";
+                ni.Text = "Server: Available on " + Dns.GetHostName() + ":" + server_port;
                 countDownTimer.Stop();                
             }
         }
